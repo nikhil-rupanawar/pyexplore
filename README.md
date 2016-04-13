@@ -2,8 +2,8 @@
 
 # pyexplore
 
-Script scans for given modules/classes/function/object
-And provides useful info at STATIC time , in json or dict formats
+         - Script scans for given modules/classes/function/object
+           And provides useful info at STATIC time , in json or dict formats
 	 - functions and there arguments , doc
 	 - classes and there methods, doc
          - global variables and symbols with values
