@@ -30,7 +30,7 @@ And provides useful info at STATIC time , in json or dict formats
 # Use as module:
 ---------------------------
    - from pyexplore import explore
-   - result_dict = explore('paramiko')
+   - result_dict = explore.explore('paramiko')
    
    
 # Output:
