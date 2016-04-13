@@ -4,8 +4,6 @@
 
 Script scans for given modules/classes/function/object
 And provides useful info at STATIC time , in json or dict formats
-like
---------- 
 	 - functions and there arguments , doc
 	 - classes and there methods, doc
          - global variables and symbols with values
@@ -13,14 +11,12 @@ like
 
 											
 									
-   Prerequisites:
-   --------------
+# Prerequisites:
          - python 2.7
          - set your PYTHONPATH or sys.path correctly 
            so that packages or modules are searchable in given path
 		   
-   Run as below examples :
-   -----------------------
+# Run as below examples :
    python explore.py paramiko
    python explore.py paramiko.sftp_client
    python explore.py paramiko.sftp_client
@@ -31,13 +27,11 @@ like
    python explore.py /usr/local/lib/python2.7/dist-packages/paramiko/sftp_client.py
    python explore.py /root/myfiles/test.py
    
-   Use as module:
-  -------------------
+# Use as module:
    from pyexplore import explore
    result_dict = explore('paramiko')
    
    
-   Output:
-   ----------
+# Output:
        When you run it from json dumped on console
        When you call main funtion
