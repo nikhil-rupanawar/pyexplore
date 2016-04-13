@@ -171,6 +171,7 @@ def get_rest_class_attributes(_class):
    rest = []
    for name in _class.__dict__:
        try:
+           if name == '__builtins__': continue
            item = getattr(_class, name)
            if not inspect.ismethod(item):
                attr_value = {name: str(item)}
@@ -235,14 +236,14 @@ def get_info(mod, is_package=False):
            for t in _inheritance:
                inheritance.append(str(t))
            _methods = get_methods(data)
- 
            _class = collections.OrderedDict()
            _class['name'] = str(name)
            _class['type'] = _type
            _class['inheritance'] = inheritance
            _class['methods'] = _methods
            _class['doc'] = data.__doc__
-           _class['attributes'] = get_rest_class_attributes(mod)
+           _class['attributes'] = get_rest_class_attributes(data)
+           print _class['attributes']
            classes.append(_class)
 
         elif inspect.isfunction(data):
