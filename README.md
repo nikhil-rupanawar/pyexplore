@@ -35,5 +35,5 @@
    
 # Output:
 
-   - When you run it from json dumped on console
-   - When you call main funtion
+   - When you run it then json dumped on console
+   - When you call explore funtion dict is returned.
